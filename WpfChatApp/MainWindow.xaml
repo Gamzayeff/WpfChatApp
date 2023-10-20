@@ -1,0 +1,104 @@
+﻿<Window x:Class="WpfChatApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfChatApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="400" AllowsTransparency="True" Background="Transparent" WindowStyle="None">
+
+    <Border Background="White" CornerRadius="50">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="0.6*"/>
+                <RowDefinition Height="0.8*"/>
+            </Grid.RowDefinitions>
+            <Label Margin="154,5,153,405" Grid.Row="2" Content="20/10 15:58 FR"/>
+            <ListView Name="chatListView" Margin="14,59,284,358" Grid.Row="2">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Lorem" Width="100" DisplayMemberBinding="{Binding Sender}" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <ListView x:Name="chatListView_Copy" Margin="289,105,10,310" Grid.Row="2">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Lorem" Width="100" DisplayMemberBinding="{Binding ISender}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <ListView x:Name="chatListView_Copy1" Margin="235,140,10,275" Grid.Row="2">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Lorem ipsum dolor sit amet" Width="150" DisplayMemberBinding="{Binding ISender}" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <ListView x:Name="chatListView_Copy2" Margin="18,211,227,205" Grid.Row="2">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Lorem ipsum dolor sit." Width="150" DisplayMemberBinding="{Binding Sender}" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <Label Margin="154,238,153,172" Grid.Row="2" Content="20/10 17:46 FR"/>
+            <ListView x:Name="chatListView_Copy3" Margin="235,275,10,141" Grid.Row="2">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Consectetur" Width="150" DisplayMemberBinding="{Binding ISender}" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <Label Margin="154,308,153,102" Grid.Row="2" Content="20/10 18:15 FR"/>
+            <ListView x:Name="chatListView_Copy4" Margin="18,343,227,73" Grid.Row="2">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="consectetur adipiscing elit.." Width="150" DisplayMemberBinding="{Binding Sender}" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <ListView x:Name="chatListView_Copy5" Margin="235,387,10,29" Grid.Row="2">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Beneee....." Width="150" DisplayMemberBinding="{Binding ISender}" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+
+
+            <Border Width="100" Height="30" Background="Black" CornerRadius="15"/>
+            <Label Grid.Row="1" Background="LightBlue"/>
+            <Label Grid.Row="3" Background="LightBlue"/>
+
+
+
+
+            <Border Width="50" Height="50" Margin="18,6,332,5" Background="White" Grid.Row="1" CornerRadius="25">
+                <Image Source ="/Image/png-image.png" Margin="-11,-18,-11,6"/>
+            </Border>
+            <Border Width="20" Height="20" Margin="55,36,325,5" Grid.Row="1" Background="Green" CornerRadius="10"/>
+            <Label Height="30" Margin="91,10,221,21" Grid.Row="1" Content="Elon Musk" Foreground="White" FontSize="16" FontFamily="Californian FB" />
+            <Image Source ="/Image/phone.png" Margin="265,15,107,19" RenderTransformOrigin="0.448,0.62"/>
+            <Image Source ="/Image/wifi.png" Margin="302,17,68,20" RenderTransformOrigin="0.448,0.62"/>
+            <Image Source ="/Image/battery.png" Margin="339,18,32,19" RenderTransformOrigin="0.448,0.62"/>
+            <Label Width="50" Margin="58,9,292,12" Content="9:13" FontSize="20"/>
+
+            <Image Source ="/Image/remove.png" Margin="-311,18,-313,-89" RenderTransformOrigin="0.448,0.62" Grid.Row="3" Grid.RowSpan="2"/>
+            <Label Height="30" Margin="91,31,221,482" Grid.Row="1" Content="Online" Foreground="White" FontSize="12" Grid.RowSpan="2" />
+
+            <TextBox Grid.Row="3" Foreground="Gray" Text="Enter message" Margin="10,18,88,16" FontSize="18"/>
+
+            <Image Source ="/Image/send.png" Margin="272,18,-35,10" RenderTransformOrigin="0.448,0.62" Grid.Row="3"/>
+            <Label Margin="154,174,153,236" Grid.Row="2" Content="20/10 17:23 FR"/>
+            
+
+
+        </Grid>
+    </Border>
+
+</Window>
